@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 94%;
+    margin: 0 auto;
+}
+
+main{
+    height: fit-content;
+    background-image: url(../imagens/Section1Background.png);
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.mainBackground{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 130, 189, 0.7);
+}
+
+header{
+    height: 5em;
+    border-bottom: 1px solid black;
+}
+
+header > .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625em 0;
+}
+
+header .logo{
+    width: 9.3em;
+    height: 100%;
+    background-image: url(../imagens/logo.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+header nav{
+    width: fit-content;
+}
+
+header nav a{
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-left: 0.625em;
+    cursor: pointer;
+}
+
+/*Section1*/
+
+.section1{
+    padding: 3.125em 0;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.section1 h1{
+    font-size: 3em;
+}
+
+.section1 p{
+    margin-bottom: 2em;
+}
+
+.section1 a{
+    font-weight: bold;
+    padding: 0.625em 2em;
+    background-color: #fcc400;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.section1 a:hover{
+    padding: 1em 3em;
+    color: black;
+}
+
+
+/*Section 2*/
+
+.section2{
+    background-color: #5b9fe7;
+    background-image: url(../imagens/Design.png);
+    background-size: cover;
+    padding: 2.5em 0;
+
+   
+}
+
+
+.s2Text{
+    width: 70%;
+    margin: 0 auto;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.s2Text h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.servicos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.servico{
+    width: calc(33% - 0.625em);
+}
+
+.servico img{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/*Section 3*/
+
+.section3{
+    padding: 3em 0;
+
+    width: 100%;
+    height: fit-content;
+    background-attachment: fixed;
+
+    background-image: url(../imagens/dados.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.s3Text{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.s3Text h1{
+    font-size: 3em;
+}
+
+.s3Text p{
+    margin-top: 20px;
+}
+
+.info-wraper{
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    width: 31%;
+}
+
+.info-circle{
+    margin: 0 auto;
+    width: 15em;
+    height: 15em;
+    border: 5px solid white;
+    border-radius: 50%;
+
+    
+}
+
+.text-circle{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*Section4*/
+
+.section4{
+    background-color: rgb(65, 130, 189);
+    padding: 5em 0;
+}
+
+.section4 > h1{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 4em;
+}
+
+.section4 > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.planos{
+    width: calc(33% - 1em);
+    padding: 2.5em;
+    background-color: white;
+    text-align: center;
+}
+
+.planos h2, .planos p{
+    color: rgb(65, 130, 189);
+    margin-bottom: 0.625em;
+}
+
+.planos p{
+    margin-bottom: 1.25em;
+}
+
+.planos img{
+    width: 90%;
+}
+
+.planos a{
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 0.625em 2em;
+    background-color: #fcc400;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.planos a:hover{
+    color: black;
+}
+
+/*Section5*/
+
+.section5{
+    background-image: url(../imagens/section5.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.s5Container{
+    padding: 20em 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.s5Container p{
+    font-size: 2em;
+}
+
+.s5Container h1{
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #343434;
+    padding: 5em 0;
+}
+
+footer > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > .container h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+footer > .container a{
+    display: block;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.footer-colunaMaior{
+    width: 40%;
+}
+
+.socialMedia{
+    margin-top: 1.5em;
+    display: flex;
+}
+
+.socialMedia img{
+    width: 3em;
+    margin: 0.3em;
+    cursor: pointer;
+}
+
+.footer-colunaMenor{
+    width: fit-content;
+}
+
+.footer-colunaMaior, .footer-colunaMenor{
+    padding: 0.625em;
+}
+
+@media screen and (min-width: 768px){ /*Para telas menores de 768px o main não oculpa mais 100%*/
+    main{
+        height: 100%;
+    }
+
+    header{
+        height: 12%;
+    }
+
+    .section1{
+        height: 88%;
+        
+    }
+
+    .section1Text{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 468px){ /*Menu mobile*/
+    body{
+        font-size: 7px;
+    }
+}

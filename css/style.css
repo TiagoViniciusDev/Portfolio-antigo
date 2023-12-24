@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 94%;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+:root{
+    --cor-principal: #1f203a;
+    --cor-secundaria: #fceb21;
+}
+
+header{
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.7em 0;
+    
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    width: 3em;
+}
+
+header nav a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    margin-right: 0.8em;
+    cursor: pointer;
+}
+
+header nav a:hover{
+    color: var(--cor-secundaria);
+}
+
+/*Sobre*/
+
+.sobre{
+    padding-top: 3em;
+    background-color: var(--cor-secundaria);
+    height: 32em;
+}
+
+.sobre > .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto-perfil{
+    width: 24em;
+    height: 100%;
+    position: relative;
+    top: 10%;
+
+    background-image: url(../imagens/perfil.jpg);
+    background-size: cover;
+}
+
+.foto-perfil h1{
+    position: absolute;
+    right: -1em;
+    bottom: 0.2em;
+    font-size: 5em;
+    color: white;
+}
+
+.sobre-text{
+    width: calc(100% - 24em - 1.25em);
+    height: 24em;
+}
+
+.sobre-text p{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 300;
+    color: var(--cor-principal);
+}
+
+/*Projetos*/
+
+.projetos-destaque{
+    background-color: var(--cor-principal);
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+.projetos-destaque > .container > h1{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.625em 1.25em;
+    background-color: var(--cor-secundaria);
+    white-space: nowrap;
+}
+
+.projetos-destaque > .container > p{
+    margin: 0.6em auto;
+    width: fit-content;
+    color: white;
+}
+
+.projeto{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+    color: white;
+}
+
+.projeto-img{
+    width: 20em;
+    height: 20em;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+.projeto-desc{
+    width: calc(100% - 20em - 2em);
+}
+
+.projeto-desc a{
+    display: block;
+    width: fit-content;
+    font-size: 1.5em;
+    color: white;
+}
+
+.projeto-desc span{
+    font-weight: bold;
+}
+
+.projeto-desc > p{
+    font-size: 1.2em;
+}
+
+.projeto-desc ul{
+    margin-top: 0.5em;
+}
+ 
+.projeto-desc ul p{  /*aaaaaaaaaaaa*/
+    font-size: 1.2em;
+}
+
+.projeto-desc ul p i{
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background-image: url(../imagens/verificado.png);
+    background-size: 100% 100%;
+    position: relative;
+    bottom: -0.05em;
+}
+
+.linguagens{
+    display: flex;
+    color: var(--cor-principal);
+}
+
+.linguagens p{
+    padding: 0.625em 1.25em;
+    margin: 1em 0;
+    margin-right: 0.3em;
+    color: black;
+    border-radius: 4em;
+    font-weight: bold;
+}
+
+.linguagens .html{
+    background-color: red;
+}
+
+.linguagens .css{
+    background-color: aqua;
+}
+
+.linguagens .js{
+    background-color: yellow;
+}
+
+/*Habilidades*/
+
+.skills{
+    background-color: var(--cor-principal);
+    padding: 2em 0;
+    color: white;
+}
+
+.skill-icones{
+   display: flex;
+   justify-content: space-between;
+   width: 40em;
+   margin: 3em auto;
+}
+
+.skill-icones img{
+    width: 10em;
+}
+
+.skills h1{
+    width: fit-content;
+    margin: 0em auto;
+    padding: 0.625em 1.25em;
+    color: black;
+    background-color: var(--cor-secundaria);
+    white-space: nowrap;
+}
+
+.skills > .container h2{
+    text-align: center;
+    margin-top: 0.3em;
+}
+
+/*Contato*/
+
+.contato{
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    padding: 2em 0;
+    color: var(--cor-principal);
+}
+
+
+.contato > .container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.mensagem{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.mensagem h2{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.enviar-mensagem{
+    padding: 0.625em 1.25em;
+    background-color: var(--cor-principal);
+    border-radius: 4em;
+    color: white;
+    transition: 0.5s;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.enviar-mensagem:hover{
+    padding: 0.625em 1.7em;
+}
+
+.mensagem i{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.3em;
+    background-image: url(../imagens/whatsapp-icon.png);
+    background-size: 100% 100%
+}
+
+.meios-contato div{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.meios-contato div img{
+    width: 1.5em;
+    margin-right: 0.3em;
+}
+
+.meios-contato h2{
+    font-size: 0.8em;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--cor-principal);
+    padding: 1.25em 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-header{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0.625em auto;
+}
+
+.footer-header img{
+    width: 4em;
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 10px;
+    }
+
+    .contato > .container{
+        width: calc(100% - 4em);
+    }
+
+    .sobre-text p{
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    body{
+        font-size: 7px;
+    }
+}

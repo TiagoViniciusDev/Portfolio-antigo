@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em; /*Padding direto no body para que o conteudo não fique colado nas bordas da tela*/
+  }
+
+  :root{
+    --corFundo: rgb(50, 50, 50);
+    --corCalculadora: rgb(196,196,196);
+    --corTituloCalculadora:rgb(100,100,100);
+    --corOperacaoAnterior: rgb(120,120,120);
+    --corNumeros: rgb(255,255,255);
+    --corOperacoes: rgb(250, 129, 49);
+    --corOperacoesHover: rgb(199, 101, 36);
+    --corNumerosHover: rgb(220,220,220);
+    --corBotoesDelete: rgb(160, 160, 160);
+    --corBotoesDeleteHover: rgb(120,120,120);  
+    --corBotaoIgual: rgb(58, 145, 216);
+    --corBotaoIgualHover: rgb(39, 95, 140);
+  }
+  
+  #Calculadora{
+    width: 25em;
+    padding: 0.5em;
+    background-color: var(--corCalculadora);
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #Calculadora h3{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: var(--corTituloCalculadora);
+  }
+  
+  #operacoes{
+    text-align: right;
+  }
+  
+  #OperacaoAnterior{
+    color: var(--corOperacaoAnterior);
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+  }
+  
+  #OperacaoAtual{
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+  }
+  
+  #botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*Proporção do tamanho dos botões para cada coluna*/
+    gap: 0.18em;
+  }
+  
+  #botoes button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: var(--corNumeros);
+    cursor: pointer;
+  }
+
+  #botoes .operacao{
+    background-color: var(--corOperacoes);
+  }
+
+  #botoes .deletar{
+    background-color: var(--corBotoesDelete);
+  }
+
+  #botoes #resultado{
+    grid-column: span 2;
+    background-color: var(--corBotaoIgual);
+  }
+  
+  #botoes button:hover{
+    background-color: var(--corNumerosHover);
+    border-color: #999;
+  }
+  
+  #botoes .deletar:hover{
+    background-color: var(--corBotoesDeleteHover);
+  }
+
+  #botoes .operacao:hover{
+    background-color: var(--corOperacoesHover);
+  }
+  
+  #botoes #resultado:hover{
+    grid-column: span 2;
+    background-color: var(--corBotaoIgualHover);
+  }
+
+  @media screen and (max-width: 568px){
+    body{
+      font-size: 10px;
+    }
+  }

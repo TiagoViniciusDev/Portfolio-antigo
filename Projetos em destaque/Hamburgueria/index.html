@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icone-Site.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/function.js" defer></script>
+    <script src="js/slide.js" defer></script>
+    
+    <title>Burger Store</title>
+</head>
+<body>
+    
+    <main onmousedown = 'return false' onselectstart = 'return false'>
+        <div class="container">
+            
+                <header>
+                    <div class="logo">
+                        <img src="imagens/icone burger.png">
+                        <h2>Burger Store</h2>
+                    </div><!--logo-->
+
+                    <div class="nav-bar">
+                            <a>HOME</a>
+                            <a href="#menu">MENU</a>
+                            <a href="#ofertas">OFERTAS</a>
+                            <a href="#contato">CONTATO</a>
+                            <i></i>
+                    </div><!--nav-bar-->
+                </header>
+
+                <div class="menu-mobile hide">
+                    <a>HOME</a>
+                    <a href="#menu">MENU</a>
+                    <a href="#ofertas">OFERTAS</a>
+                    <a href="#contato">CONTATO</a>
+                </div><!--menu-mobile-->
+
+                <section class="section1">
+                    <div class="texto-main">
+                        <h3>Melhor momento para comprar</h3>
+                        <div id="titulo-principal">
+                            <h1 style="color: white;">Burger</h1><h1 class="titulo-detalhe">Burger</h1>
+                        </div>
+                        <div id="subtitulo-principal">
+                            <h2 style="color: white;">Week</h2><h2 class="subtitulo-detalhe">Week</h2>
+                        </div>
+                    </div><!--texto-main-->
+
+                    <div class="img-main">
+                        <div class="imagem-principal"></div>
+                    </div><!--img-main-->
+                </section><!--section1-->
+            </main>
+
+                <section class="section2">
+                    <div class="section2-left">
+                        <div class="section2-img1">
+                            <div class="section2-text">
+                                <h4>PROVE HOJE</h4>
+                                <h3>O HAMBURGER MAIS VENDIDO</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2-right">
+                        <div class="section2-img2">
+                            <div class="section2-text2">
+                                <h4>PROVE HOJE</h4>
+                                <h3>MAIS DIVERSÃO</h3>
+                                <h3>MAIS SABOR</h3>
+                            </div>
+                        </div>
+                        <div class="section2-img3">
+                            <div class="section2-text2">
+                                <h4>PROVE HOJE</h4>
+                                <h3>SABOR & TEMPERO</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--section2-->
+
+                <section class="section3" id="menu">
+                    <div class="section3-text">
+                        <h4>PROVE NOVOS SABORES</h4>
+                        <h2>ESCOLHA & APROVEITE</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus quam, lacinia ac tincidunt quis, blandit quis sapien.</p>
+                    </div>
+                    <div class="escolher-hamburger">
+                        <div class="hamburger1">
+                            <div class="section3-burgerImg section3-burgerImg1"></div>
+                            <h4>LOREM IPSUM</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a>PEDIR</a>
+                        </div>
+                        <div class="hamburger2">
+                            <div class="section3-burgerImg section3-burgerImg2"></div>
+                            <h4>LOREM IPSUM</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a>PEDIR</a>
+                        </div>
+                        <div class="hamburger1">
+                            <div class="section3-burgerImg section3-burgerImg1"></div>
+                            <h4>LOREM IPSUM</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a>PEDIR</a>
+                        </div>
+                    </div>
+                </section><!--section3-->
+
+                <section class="box-wraper" id="ofertas">
+                    <div class="box">
+                        <div class="slideElements">
+                            <div class="slide">
+                                <div class="slideText">
+                                    <h3>DESCUBRA</h3>
+                                    <h2>NOVOS EVENTOS</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus quam, lacinia ac tincidunt quis, blandit quis sapien.</p>
+                                </div>
+
+                                <div class="slideImg"></div>
+                            </div><!--slide-->
+
+                            <div class="slide">
+                                <div class="slideText">
+                                    <h3>DESCUBRA</h3>
+                                    <h2>SHOW DE OFERTAS</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus quam, lacinia ac tincidunt quis, blandit quis sapien.</p>
+                                </div>
+
+                                <div class="slideImg slideImg2"></div>
+                            </div><!--slide-->
+
+                            <div class="slide">
+                                <div class="slideText">
+                                    <h3>DESCUBRA</h3>
+                                    <h2>MELHOR PREÇO</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus quam, lacinia ac tincidunt quis, blandit quis sapien.</p>
+                                </div>
+
+                                <div class="slideImg"></div>
+                            </div><!--slide-->
+
+                            <div style="clear: both;"></div>
+                        </div><!--slideElements-->
+                    </div><!--box-->
+
+                    <div class="bullets">
+                        <span style="background-color: #ffc045;" contagem="0"></span>
+                        <span contagem="1"></span>
+                        <span contagem="2"></span>
+                    </div><!--bullets-->
+                </section><!--box-wraper-->
+        </div><!--container-->
+
+        <section class="reserva">
+            <div class="box1">
+                <img src="imagens/ketchup.png">
+            </div>
+            <div class="box2">
+                <h4>RESERVA</h4>
+                <h2>RESERVE SUA MESA</h2>
+                <form>
+                    <input type="text" placeholder="NOME">
+                    <input type="email" placeholder="EMAIL">
+                    <input type="text" placeholder="DATA">
+                    <input type="text" placeholder="HORA">
+                    <input type="number" placeholder="NÚMERO DE PESSOAS">
+                    <input type="submit" value="ENCONTRE SUA MESA">
+                </form>
+            </div>
+            <div class="box3">
+                <img src="imagens/prato.png">
+            </div>
+        </section>
+
+        <div class="container">
+            <footer>
+                <div class="info">
+                    <div class="logo">
+                        <img src="imagens/icone burger white.png">
+                        <h2>Burger Store</h2>
+                    </div><!--logo-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus quam.</p>
+                    <p>©NomeDaCompanhia 2023, todos os direitos reservados</p>
+                </div><!--info-->
+
+                <div class="contato" id="contato">
+                    <div class="locate">
+                        <img src="imagens/localização.png">
+                        <h4>RUA 123, harmburger Nº9999</h4>
+                    </div>
+                    <div class="email">
+                        <img src="imagens/email.png">
+                        <h4>burgerstore@burger.com</h4>
+                    </div>
+
+                    <div class="icones">
+                        <img src="imagens/instagram.png">
+                        <img src="imagens/facebook.png">
+                        <img src="imagens/twitter.png">
+                        <img src="imagens/whatsapp.png">
+                    </div>
+                </div><!--contato-->
+            </footer>
+        </div>
+       
+    
+    
+</body>
+</html>
